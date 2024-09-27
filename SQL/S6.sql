@@ -1,0 +1,11 @@
+CREATE DATABASE Mouri;
+USE Mouri;
+CREATE USER "ashok@localhost" IDENTIFIED BY"abcd1234";
+SELECT USER FROM mysql.user;
+grant select on *.* TO "ashok@localhost" with grant option;
+grant create on *.* TO "ashok@localhost" with grant option;
+grant update on *.* TO "ashok@localhost" with grant option;
+grant insert on *.* TO "ashok@localhost" with grant option;
+grant create on *.* TO "ashok@localhost" with grant option;
+grant alter on *.* TO "ashok@localhost" with grant option;
+grant drop on *.* TO "ashok@localhost" with grant option;
