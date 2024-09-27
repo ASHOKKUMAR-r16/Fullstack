@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 90%;
+            height: 300px;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        .box{
+            width: 250px;
+            height: 200px;
+            background-color: blue;
+        }
+        @media screen and (max-width:600px){
+
+            #container{
+                flex-direction: column;
+            }
+            .box{
+                margin: 40px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box">one</div>
+        <div class="box">two</div>
+        <div class="box">three</div>
+
+
+    </div>
+    
+    
+</body>
+</html>
